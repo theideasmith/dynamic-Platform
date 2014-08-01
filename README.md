@@ -16,25 +16,29 @@ dynamic-Platform
 Take a minute, to clone this repo to your local github. I'll wait. 
 
 First, add this line of code to the top of your Scene class:
+
+<code> 
     #import "roundedGround.h"
-_________
+</code>
+
 Add this line of code in your onEnter, didLoadFromCCB, or a custom setup method. Replace [self level] with the name of the content-node in your game. 
 
-   className = [NSString stringWithFormat:@"%s",class_getName([groundEdgeNode class])];//Not roundedGround
+   <code>className = [NSString stringWithFormat:@"%s",class_getName([groundEdgeNode class])];//Not roundedGround
        NSArray *roundedGrounds = [self nodeWithClass:className withArray:level.children childrenOf:[self level]];
        if ([roundedGrounds count] != 0) {
            [roundedGround roundedGroundNodesByArray:(NSMutableArray *)roundedGrounds asChildrenOf:level];
        }
+    </code>
 
-__________
 
 Add this line of code in your touchMoved method in whichever scene you want to create roundedGrounds in. 
-    NSArray *groundes;
+    <code>NSArray *groundes;
         NSString *className = [NSString stringWithFormat:@"%s",class_getName([morph class])];//Not roundedGround
         groundes = [self nodeWithClass:className withArray:level.children childrenOf:[self <content-node in your game>]];
         for (roundedGround *managerGround in groundes) {
             [managerGround touch:touch];
         }
+    </code>
 
 Ok, now that you have the code setup, it is time learn how to actually use it:
 You must first open spritebuilder 
