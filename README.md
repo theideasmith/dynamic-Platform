@@ -21,7 +21,7 @@ First, add this line of code to the top of your Scene class:
     #import "roundedGround.h"
 
 
-Add this line of code in your onEnter, didLoadFromCCB, or a custom setup method. Replace [self level] with the name of the content-node in your game. 
+Add this line of code in your onEnter, didLoadFromCCB, or a custom setup method. Replace <code>[self level]</code> with the name of the content-node in your game. 
 
     className = [NSString stringWithFormat:@"%s",class_getName([groundEdgeNode class])];//Not roundedGround
        NSArray *roundedGrounds = [self nodeWithClass:className withArray:level.children childrenOf:[self level]];
