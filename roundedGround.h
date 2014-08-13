@@ -62,7 +62,7 @@ typedef enum {
 #pragma mark roundedGround.Proper
 
 @interface roundedGround : CCNode  <Occluder> {
-    BOOL gumliContact;
+    BOOL nodeContact;
     BOOL gravityEnabled;
     CGPoint midPoint;
     CCDrawNode *drawNode;
@@ -82,7 +82,7 @@ typedef enum {
     
 }
 @property groundNodePhysicsBody *groundNode;
-@property (weak )CCNode *characterRef;
+@property (weak )CCNode *nodeRef;
 @property types kindOfGround;
 -(void)collisionWithGumli:(CCNode *)node andNode:(groundNodePhysicsBody *)node;
 -(NSArray *)applyBezierCurvesCubic:(NSArray *)originalNSValPoints numberExtraPointsPerSegment:(int)number;
