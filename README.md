@@ -9,7 +9,7 @@ dynamic-Platform
 
 - The end result is a nice, clean interface for creating platforms with different properties - all you need is an array of points to draw the initial shape, implement a few methods in your gameplay scene, a CCPhysicsNode to add the rounded ground, and most importantly to specify the type of platform by setting the property of the first object in the array to a number - which corresponds to the type. 
 
-**Anyone interested in making a demo, please do - and download my game, Darklight, when it comes out. If this gains enough traction on github, I will open-sourc'ify' the rest of Darklight. dynamic-Platforms is my first open-source project, and I would really appreciate if the community takes it on. It is pretty cool, and can lead the way for more advanced game creation tools for cocos2d. **
+**Anyone interested in making a demo, please do - and download my game, Darklight, when it comes out. If this gains enough traction on github, I will open-sourc'ify' the rest of Darklight. dynamic-Platforms is my first open-source project, and I would really appreciate if the community takes it on. It is pretty cool, and can lead the way for more advanced game creation tools for cocos2d.**
 
 ####Here is a breakdown on how to use dynamicPlatforms with your project. 
 
